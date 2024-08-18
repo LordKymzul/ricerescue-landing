@@ -19,25 +19,27 @@ export function MemberCard({
     url
 }: MemberCardProps) {
     return (
-        <div className="flex flex-col w-full items-center ">
+        <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+
             <Link href={url} target="_blank">
                 <Image
                     height={300}
                     width={300}
                     alt={name}
-                    className="h-[400px] rounded-xl  hover:shadow-2xl hover:scale-105 transition-all duration-500 ease-in-out"
+                    className="h-[400px] rounded-xl  transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src={image} />
             </Link>
 
-            <div className="flex flex-col mt-4 items-center gap-2">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 className="font-dmserif text-3xl font-bold text-white">{name}</h1>
+                <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{about}</p>
                 <Badge
-                    variant={"default"}>
+                    variant={"default"}
+                    className="mt-3 rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                     {position}
                 </Badge>
 
-                <p className="font-semibold text-base md:text-xl">
-                    {name}
-                </p>
             </div>
         </div>
     )
