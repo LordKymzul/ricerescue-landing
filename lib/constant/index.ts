@@ -1,3 +1,4 @@
+import { AcceleratorCardProps } from "@/components/card/accelerator-card";
 import { BusinessCardProps } from "@/components/card/business-card";
 import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
@@ -134,4 +135,22 @@ export const listFunding: FundingCardProps[] = [
         desc: "Specialize in agtech investment and have industry-specific expertise, valueable connections in agricultureal sector",
         image: "/business-model/AgFunder.png",
     },
+    {
+        title: "Bank Loan",
+        desc: "Provide agricultural financing for business expansion and scaling. Can provide not only capital, but also valuable insights",
+        image: "/business-model/Agrobank.png",
+    }
+]
+
+export const listAccelerator: AcceleratorCardProps[] = [
+    {
+        title: 'YC Combinator',
+        desc: 'Okay je',
+        image: '/business-model/Y-Combinator.png'
+    },
+    {
+        title: 'AG Launch',
+        desc: 'test',
+        image: '/business-model/AG-Launch.png'
+    }
 ]

@@ -15,8 +15,8 @@ export function HardwareCard({
     return (
         <div className="flex flex-col w-full items-center">
             <Image
-                height={300}
-                width={300}
+                height={1000}
+                width={1000}
                 alt={title + image}
                 style={{
                     objectFit: "cover",

@@ -13,11 +13,11 @@ export function FundingCard({
     desc
 }: FundingCardProps) {
     return (
-        <div className="border hover:border-gradient-to-r from-lime-400 to-green-300 hover:bg-primary hover:text-white rounded-xl hover:scale-105 transition-all duration-500 ease-in-out">
+        <div className="border hover:border-gradient-to-r from-lime-400 to-green-300 hover:bg-primary hover:text-white rounded-xl hover:scale-105 transition-all duration-500 ease-in-out shadow-sm hover:shadow-xl">
             <div className="flex items-center gap-x-6 p-4">
                 <Image
-                    height={200}
-                    width={200}
+                    height={220}
+                    width={220}
                     alt={title}
                     src={image} />
                 <div className="flex flex-col gap-2">
