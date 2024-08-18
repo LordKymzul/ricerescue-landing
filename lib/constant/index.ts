@@ -1,7 +1,9 @@
 import { BusinessCardProps } from "@/components/card/business-card";
+import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
+
 import exp from "constants";
 
 export const listSolution: SolutionCardProps[] = [
@@ -120,3 +122,16 @@ export const listHardware: HardwareCardProps[] = [
         image: "/hardware/SoilHumidity&TempSensor.png"
     }
 ];
+
+export const listFunding: FundingCardProps[] = [
+    {
+        title: "ECF",
+        desc: "Able to raise capital from a broad base of investors including no-accredited individual while handling much of the regulatory compliance",
+        image: "/business-model/seedinvest.png",
+    },
+    {
+        title: "Venture Capital",
+        desc: "Specialize in agtech investment and have industry-specific expertise, valueable connections in agricultureal sector",
+        image: "/business-model/AgFunder.png",
+    },
+]
