@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
             <div className="h-[80px] inset-y-0 w-full z-50">
                 <HeadNavbar />
             </div>
-            <main className="h-full mx-4 md:container">
+            <main className="h-full mx-4 md:mx-20">
                 {children}
             </main>
         </div>

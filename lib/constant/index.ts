@@ -1,7 +1,9 @@
+import { AcceleratorCardProps } from "@/components/card/accelerator-card";
 import { BusinessCardProps } from "@/components/card/business-card";
 import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
+import { PartnersCardProps } from "@/components/card/partners-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
 import exp from "constants";
 
@@ -32,12 +34,10 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Funding",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png"
+            "/business-model/seedinvest.png",
+            "/business-model/AgFunder.png",
+            "/business-model/Agrobank.png",
+
         ],
         items: [
             "ECF", "P2P", "Goverment", "Bank Loan"
@@ -46,12 +46,11 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Partnership",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png"
+            "/business-model/Raspberrypi.png",
+            "/business-model/arduino.png",
+            "/business-model/NXP.png",
+            "/business-model/OpenAI.png",
+
         ],
         items: [
             "Companies", "Goverments"
@@ -60,8 +59,8 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Revenue",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
+            "/business-model/subscription.png",
+            "/business-model/IoT.png"
 
         ],
         items: [
@@ -81,7 +80,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Irfan Ghapar",
         position: "Tech Lead",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2Firfandp.jpeg?alt=media&token=56e72581-3032-4557-89a6-6be4146c3b4f",
+        image: "/member/Irfan.png",
         url: "https://www.linkedin.com/in/irfan-ghapar-08b897210/",
         about: "Every setback is a setup for a stronger comeback. Embrace failure as a stepping stone to success in your entrepreneurial journey."
 
@@ -90,7 +89,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Muhammad Hakim",
         position: "Software Developer",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2F12CC0BF1-678B-4523-9A8C-178DDDFC17B4_1_105_c.jpeg?alt=media&token=ec00d75d-d3e9-46c5-b669-febcd4eaeab9",
+        image: "/member/hakim.jpg",
         url: "https://www.linkedin.com/in/muhammad-hakim-523748272/",
         about: "Technology may change, but the passion for creating something meaningful stays constant. Keep your passion alive, and let it drive you to new heights.",
     },
@@ -98,7 +97,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Haris Azhari",
         position: "AI Engineer",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2FCB6832CB-689F-41DB-B4B0-5EC053161178_1_105_c.jpeg?alt=media&token=292c175f-901f-4e88-9f19-62f4d0a55034",
+        image: "/member/haris.jpeg",
         url: "https://www.linkedin.com/in/haris-azhari-27aa952a4/",
         about: "Innovation distinguishes between a leader and a follower.Keep pushing the boundaries of technology, and you'll pave the way for the future."
     }
@@ -107,56 +106,95 @@ export const listTeams: MemberCardProps[] = [
 export const listHardware: HardwareCardProps[] = [
     {
         title: "Autonomous Drone",
-        desc: "Auto flying drone for user for spraying pesticide.",
+        desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+        specs: ["2 hours of Flight Time", "Max 3kg Pesticide Limit", "5 hours charge time", "4 Propeller"],
         image: "/hardware/DronePic.png"
     },
     {
-        title: "Rasberry PI",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "PaddyX Pest Detector",
+        desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+        specs: ["Tensorflow Audio Classifier", "Data transmission through mobile data or radio", "Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
         image: "/hardware/pestDetector.png"
     },
     {
-        title: "IOT Device",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "PaddyX Soil Sensor",
+        desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+        specs: ["Soil Moisture", "Soil Temperature", "Real-time data", "GPS", "50 Days Battery Life"],
         image: "/hardware/SoilHumidity&TempSensor.png"
     }
 ];
 
 export const listFunding: FundingCardProps[] = [
     {
-        title: "Industry Drone",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
-        image: "/hardware/DronePic.png"
+        title: "ECF",
+        desc: "Able to raise capital from a broad base of investors including no-accredited individual while handling much of the regulatory compliance",
+        image: "/business-model/seedinvest.png",
     },
     {
-        title: "Rasberry PI",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
-        image: "/hardware/pestDetector.png"
+        title: "Venture Capital",
+        desc: "Specialize in agtech investment and have industry-specific expertise, valueable connections in agricultureal sector",
+        image: "/business-model/AgFunder.png",
     },
     {
-        title: "IOT Device",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
-        image: "/hardware/SoilHumidity&TempSensor.png"
+        title: "Bank Loan",
+        desc: "Provide agricultural financing for business expansion and scaling. Can provide not only capital, but also valuable insights",
+        image: "/business-model/Agrobank.png",
     }
-];
+]
+
+export const listAccelerator: AcceleratorCardProps[] = [
+    {
+        title: 'YC Combinator',
+        desc: "Access to world-class mentorship, a powerful network of founders and investors, and significant funding. The program's reputation can dramatically increase our visibility and credibility in the tech industry, potentially accelerating growth and opening doors to future investment opportunities",
+        image: '/business-model/Y-Combinator.png'
+    },
+    {
+        title: 'AG Launch',
+        desc: "Specializes in agricultural technology, offering tailored mentorship and resources specific to our startup's niche. Their strong connections with farmers and agribusinesses provide invaluable opportunities for real-world testing and validation of our product",
+        image: '/business-model/AG-Launch.png'
+    }
+]
+
+export const listPartners: PartnersCardProps[] = [
+    {
+        title: 'AI Board Manufacturer',
+        image: '/business-model/Raspberrypi.png',
+        desc: 'Supply industry leading microcontroller board for PaddyX Pest Detector. Since Pest Detector are embedded with AI Audio Classifier model, it requires high computing power while maintaining low energy usage '
+    },
+    {
+        title: 'Sensor Manufacturer',
+        image: '/business-model/arduino.png',
+        desc: 'Supply industry leading IoT Sensors for PaddyX Soil Humidity and Temperature. Crucial to deliver accurate and reliable real-time data'
+    },
+    {
+        title: 'Drone Supplier',
+        image: '/business-model/NXP.png',
+        desc: 'Supply programable drone parts including microcontroller, body frames, and propeller. After assembling, our team will implement autonomous flying features for user customization'
+    },
+    {
+        title: 'LLM',
+        image: '/business-model/OpenAI.png',
+        desc: 'Provide industry leading LLM model that will be enhanced and fine-tuned with paddy related information. This trained model will then be embedded in mobile apps Rice Rescue'
+    }
+]
 
 export const listHardwareWithSpecs = [
     {
         title: "Autonomous Drone",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
-        specs: ["2 hours of Flight Time","Max 3kg Pesticide Limit","5 hours charge time", "4 Propeller"],
+        specs: ["2 hours of Flight Time", "Max 3kg Pesticide Limit", "5 hours charge time", "4 Propeller"],
         image: "/hardware/DronePic.png"
     },
     {
         title: "PaddyX Pest Detector",
         desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
-        specs: ["Tensorflow Audio Classifier","Data transmission through mobile data or radio","Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
+        specs: ["Tensorflow Audio Classifier", "Data transmission through mobile data or radio", "Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
         image: "/hardware/pestDetector.png"
     },
     {
         title: "PaddyX Soil Sensor",
         desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
-        specs: ["Soil Moisture","Soil Temperature","Real-time data", "GPS", "50 Days Battery Life"],
+        specs: ["Soil Moisture", "Soil Temperature", "Real-time data", "GPS", "50 Days Battery Life"],
         image: "/hardware/SoilHumidity&TempSensor.png"
     }
 ];

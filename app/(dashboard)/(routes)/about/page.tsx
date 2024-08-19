@@ -30,29 +30,8 @@ export default function AboutPage() {
             <BuildSoftwareArchitecture />
             <BuildHardware />
             <BuildTeamMembers />
-            <section className="flex flex-col w-full pt-12 md:pt-24">
-                <BuildTitleSection
-                    title="Funding"
-                    desc="Our team of skilled professionals is dedicated to delivering exceptional IT solutions that help our clients succeed."
-                    badges={
-                        ["Our Team", "ECF", " Venture Capital"]
-                    } />
-                <div className="grid grid-cols-1 md:grid-cols-3 w-full items-center gap-6 mt-6">
 
-                    {
-                        listHardware.map((funding, index) => {
-                            return (
-                                <FundingCard
-                                    key={index}
-                                    image={funding.image}
-                                    title={funding.title}
-                                    desc={funding.desc}
-                                />
-                            )
-                        })
-                    }
-                </div>
-            </section>
+
         </div>
     )
 }
@@ -154,7 +133,7 @@ function BuildTeamMembers() {
                 badges={
                     ["Our Team"]
                 } />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full items-start gap-6 mt-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 w-full items-start gap-6 mt-6">
 
                 {
                     listTeams.map((team, index) => {
@@ -211,7 +190,8 @@ function BuildHardware() {
                                 key={index}
                                 title={hardware.title}
                                 desc={hardware.desc}
-                                image={hardware.image} />
+                                image={hardware.image}
+                                specs={hardware.specs} />
                         )
                     })
                 }

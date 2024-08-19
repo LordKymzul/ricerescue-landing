@@ -5,12 +5,14 @@ export interface HardwareCardProps {
     title: string;
     desc: string;
     image: string;
+    specs: string[];
 }
 
 export function HardwareCard({
     title,
     desc,
-    image
+    image,
+    specs
 }: HardwareCardProps) {
     return (
         <div className="flex flex-col w-full items-center">

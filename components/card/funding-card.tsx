@@ -17,14 +17,11 @@ export function FundingCard({
         <div className="hover:bg-primary hover:text-white rounded-xl hover:scale-105 transition-all duration-500 ease-in-out">
             <div className="flex items-center gap-x-6 p-4 w-full">
                 <Image
-                    height={300}
-                    width={300}
+                    height={220}
+                    width={220}
                     alt={title}
                     src={image}
-                    style={{
-                        objectFit: "cover",
-                        height: 200
-                    }}
+                    className="object-cover"
                 />
                 <div className="flex flex-col gap-2">
                     <p className="font-bold text-xl md:text-2xl">
