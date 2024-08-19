@@ -13,7 +13,7 @@ export function FundingCard({
     desc
 }: FundingCardProps) {
     return (
-        <div className="border hover:border-gradient-to-r from-lime-400 to-green-300 hover:bg-primary hover:text-white rounded-xl hover:scale-105 transition-all duration-500 ease-in-out shadow-sm hover:shadow-xl">
+        <div className="border hover:border-green-600 hover:bg-primary hover:text-white rounded-xl hover:scale-105 transition-all duration-500 ease-in-out shadow-sm hover:shadow-xl">
             <div className="flex items-center gap-x-6 p-4">
                 <Image
                     height={220}

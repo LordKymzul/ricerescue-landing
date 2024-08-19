@@ -3,6 +3,7 @@ import { BusinessCardProps } from "@/components/card/business-card";
 import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
+import { PartnersCardProps } from "@/components/card/partners-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
 
 import exp from "constants";
@@ -145,12 +146,35 @@ export const listFunding: FundingCardProps[] = [
 export const listAccelerator: AcceleratorCardProps[] = [
     {
         title: 'YC Combinator',
-        desc: 'Okay je',
+        desc: "Access to world-class mentorship, a powerful network of founders and investors, and significant funding. The program's reputation can dramatically increase our visibility and credibility in the tech industry, potentially accelerating growth and opening doors to future investment opportunities",
         image: '/business-model/Y-Combinator.png'
     },
     {
         title: 'AG Launch',
-        desc: 'test',
+        desc: "Specializes in agricultural technology, offering tailored mentorship and resources specific to our startup's niche. Their strong connections with farmers and agribusinesses provide invaluable opportunities for real-world testing and validation of our product",
         image: '/business-model/AG-Launch.png'
+    }
+]
+
+export const listPartners: PartnersCardProps[] = [
+    {
+        title: 'AI Board Manufacturer',
+        image: '/business-model/Raspberrypi.png',
+        desc: 'Supply industry leading microcontroller board for PaddyX Pest Detector. Since Pest Detector are embedded with AI Audio Classifier model, it requires high computing power while maintaining low energy usage '
+    },
+    {
+        title: 'Sensor Manufacturer',
+        image: '/business-model/arduino.png',
+        desc: 'Supply industry leading IoT Sensors for PaddyX Soil Humidity and Temperature. Crucial to deliver accurate and reliable real-time data'
+    },
+    {
+        title: 'Drone Supplier',
+        image: '/business-model/NXP.png',
+        desc: 'Supply programable drone parts including microcontroller, body frames, and propeller. After assembling, our team will implement autonomous flying features for user customization'
+    },
+    {
+        title: 'LLM',
+        image: '/business-model/OpenAI.png',
+        desc: 'Provide industry leading LLM model that will be enhanced and fine-tuned with paddy related information. This trained model will then be embedded in mobile apps Rice Rescue'
     }
 ]

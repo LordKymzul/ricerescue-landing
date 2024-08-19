@@ -1,9 +1,10 @@
 import BuildTitleSection from '@/components/BuildTitleSection';
 import React from 'react'
-import { listFunding, listAccelerator } from '@/lib/constant';
+import { listFunding, listAccelerator, listPartners } from '@/lib/constant';
 import { FundingCard } from '@/components/card/funding-card';
 import Image from 'next/image';
 import { AcceleratorCard } from '@/components/card/accelerator-card';
+import { PartnerCard } from '@/components/card/partners-card';
 
 
 type Props = {}
@@ -81,10 +82,10 @@ function Funding() {
 
 function AcceleratorProgramme() {
     return(
-        <section className='mt-10 flex flex-col w-full pt-12 md:pt-15'>
+        <section className='pb-12 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50'>
              <BuildTitleSection
                 title='Accelerator Programme' 
-                desc='Boosting our growth to help more farmers' 
+                desc='Boosting our growth to empower more farmers' 
                 badges={['']} />
 
             <div className="grid grid-cols-2 md:grid-cols-2 w-full gap-6 mt-6 items-start">
@@ -105,12 +106,25 @@ function AcceleratorProgramme() {
 }
 
 function StrategicPartners() {
-    return(
-        <section className='mt-10 flex flex-col w-full pt-12 md:pt-15'>
-            <BuildTitleSection
-            title='Strategic Partners' 
-            desc='Establish strategic partnership with leading tech company for R&D' 
-            badges={['']} />  
-        </section>
-    )
-}
+    return (
+      <section className="mt-10 flex flex-col w-full pt-12 md:pt-15">
+        <BuildTitleSection
+          title="Strategic Partners"
+          desc="Establish strategic partnership with leading tech company for R&D"
+          badges={['']}
+        />
+  
+        <div className="mt-10 pt-12 grid grid-cols-4 md:grid-cols-4 w-full gap-6 mt-6 items-start sm:grid-cols-2">
+          {listPartners.map((partner, index) => (
+            <PartnerCard
+              key={index}
+              title={partner.title}
+              image={partner.image}
+              desc={partner.desc}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  }
+  

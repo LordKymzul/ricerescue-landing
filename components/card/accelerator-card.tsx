@@ -9,7 +9,7 @@ export interface AcceleratorCardProps {
 export function AcceleratorCard({title, desc, image}: AcceleratorCardProps) {
     return(
         <div className='flex flex-col w-full items-center hover:scale-105 transition-all duration-500 ease-in-out'>
-            <div className='relative w-full h-0 pb-[50.25%]'>
+            <div className='relative w-full h-0 pb-[30.25%]'>
                 <Image 
                     src={image} 
                     alt={title}
@@ -19,7 +19,7 @@ export function AcceleratorCard({title, desc, image}: AcceleratorCardProps) {
                 />
             </div>
 
-            <div className='flex flex-col gap-2 text-center mt-3'>
+            <div className='flex flex-col gap-2 text-center'>
                 <p className='font-bold text-xl md:text-2xl'>
                     {title}
                 </p>
