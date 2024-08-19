@@ -106,8 +106,8 @@ export const listTeams: MemberCardProps[] = [
 
 export const listHardware: HardwareCardProps[] = [
     {
-        title: "Industry Drone",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "Autonomous Drone",
+        desc: "Auto flying drone for user for spraying pesticide.",
         image: "/hardware/DronePic.png"
     },
     {
@@ -140,3 +140,23 @@ export const listFunding: FundingCardProps[] = [
     }
 ];
 
+export const listHardwareWithSpecs = [
+    {
+        title: "Autonomous Drone",
+        desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+        specs: ["2 hours of Flight Time","Max 3kg Pesticide Limit","5 hours charge time", "4 Propeller"],
+        image: "/hardware/DronePic.png"
+    },
+    {
+        title: "PaddyX Pest Detector",
+        desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+        specs: ["Tensorflow Audio Classifier","Data transmission through mobile data or radio","Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
+        image: "/hardware/pestDetector.png"
+    },
+    {
+        title: "PaddyX Soil Sensor",
+        desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+        specs: ["Soil Moisture","Soil Temperature","Real-time data", "GPS", "50 Days Battery Life"],
+        image: "/hardware/SoilHumidity&TempSensor.png"
+    }
+];
