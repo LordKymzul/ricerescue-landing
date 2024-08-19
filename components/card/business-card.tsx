@@ -22,7 +22,7 @@ export function BusinessCard({
         <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 hover:rounded-xl">
 
 
-            <div className="flex flex-col w-full p-8 border rounded-xl h-[300px] transition-transform duration-500  group-hover:scale-75 group-hover:blur-sm">
+            <div className="flex flex-col w-full p-8 border rounded-xl h-[280px] transition-transform duration-500  group-hover:scale-75 group-hover:blur-sm">
                 <div className="flex justify-center">
                     <h1 className="font-extrabold text-2xl md:text-3xl tracking-tighter">
                         {title}
@@ -35,8 +35,8 @@ export function BusinessCard({
                             return (
                                 <Image
                                     key={index}
-                                    height={100}
-                                    width={100}
+                                    height={80}
+                                    width={80}
                                     alt={index + image}
                                     src={image}
                                     style={{

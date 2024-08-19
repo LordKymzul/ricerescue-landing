@@ -37,6 +37,8 @@ export const listBusinessCard: BusinessCardProps[] = [
             "/business-model/seedinvest.png",
             "/business-model/AgFunder.png",
             "/business-model/Agrobank.png",
+            "/business-model/Y-Combinator.png",
+            "/business-model/AG-Launch.png"
 
         ],
         items: [
