@@ -133,7 +133,7 @@ function BuildTeamMembers() {
                 badges={
                     ["Our Team"]
                 } />
-            <div className="grid grid-cols-2 lg:grid-cols-4 w-full items-start gap-6 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full items-start gap-6 mt-6">
 
                 {
                     listTeams.map((team, index) => {

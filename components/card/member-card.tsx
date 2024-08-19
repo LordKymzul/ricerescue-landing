@@ -26,7 +26,7 @@ export function MemberCard({
                     height={300}
                     width={300}
                     alt={name}
-                    className="h-[400px] rounded-xl  transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    className="h-[400px] rounded-xl w-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
                     src={image} />
             </Link>
 
