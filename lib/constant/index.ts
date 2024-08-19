@@ -4,6 +4,7 @@ import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
 import { PartnersCardProps } from "@/components/card/partners-card";
+import { RevenueCardProps } from "@/components/card/revenue-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
 
 import exp from "constants";
@@ -35,12 +36,12 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Funding",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png"
+            "/business-model/seedinvest.png",
+            "/business-model/AgFunder.png",
+            "/business-model/Agrobank.png",
+            "/business-model/Y-Combinator.png",
+            "/business-model/AG-Launch.png"
+
         ],
         items: [
             "ECF", "P2P", "Goverment", "Bank Loan"
@@ -49,12 +50,11 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Partnership",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png",
-            "/features/ai.png"
+            "/business-model/Raspberrypi.png",
+            "/business-model/arduino.png",
+            "/business-model/NXP.png",
+            "/business-model/OpenAI.png",
+
         ],
         items: [
             "Companies", "Goverments"
@@ -63,8 +63,8 @@ export const listBusinessCard: BusinessCardProps[] = [
     {
         title: "Revenue",
         images: [
-            "/features/ai.png",
-            "/features/ai.png",
+            "/business-model/subscription.png",
+            "/business-model/IoT.png"
 
         ],
         items: [
@@ -84,7 +84,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Irfan Ghapar",
         position: "Tech Lead",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2Firfandp.jpeg?alt=media&token=56e72581-3032-4557-89a6-6be4146c3b4f",
+        image: "/member/Irfan.png",
         url: "https://www.linkedin.com/in/irfan-ghapar-08b897210/",
         about: "Every setback is a setup for a stronger comeback. Embrace failure as a stepping stone to success in your entrepreneurial journey."
 
@@ -93,7 +93,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Muhammad Hakim",
         position: "Software Developer",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2F12CC0BF1-678B-4523-9A8C-178DDDFC17B4_1_105_c.jpeg?alt=media&token=ec00d75d-d3e9-46c5-b669-febcd4eaeab9",
+        image: "/member/hakim.jpg",
         url: "https://www.linkedin.com/in/muhammad-hakim-523748272/",
         about: "Technology may change, but the passion for creating something meaningful stays constant. Keep your passion alive, and let it drive you to new heights.",
     },
@@ -101,7 +101,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Haris Azhari",
         position: "AI Engineer",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2FCB6832CB-689F-41DB-B4B0-5EC053161178_1_105_c.jpeg?alt=media&token=292c175f-901f-4e88-9f19-62f4d0a55034",
+        image: "/member/haris.jpeg",
         url: "https://www.linkedin.com/in/haris-azhari-27aa952a4/",
         about: "Innovation distinguishes between a leader and a follower.Keep pushing the boundaries of technology, and you'll pave the way for the future."
     }
@@ -109,18 +109,21 @@ export const listTeams: MemberCardProps[] = [
 
 export const listHardware: HardwareCardProps[] = [
     {
-        title: "Industry Drone",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "Autonomous Drone",
+        desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+        specs: ["2 hours of Flight Time", "Max 3kg Pesticide Limit", "5 hours charge time", "4 Propeller"],
         image: "/hardware/DronePic.png"
     },
     {
-        title: "Rasberry PI",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "PaddyX Pest Detector",
+        desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+        specs: ["Tensorflow Audio Classifier", "Data transmission through mobile data or radio", "Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
         image: "/hardware/pestDetector.png"
     },
     {
-        title: "IOT Device",
-        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        title: "PaddyX Soil Sensor",
+        desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+        specs: ["Soil Moisture", "Soil Temperature", "Real-time data", "GPS", "50 Days Battery Life"],
         image: "/hardware/SoilHumidity&TempSensor.png"
     }
 ];
@@ -178,3 +181,39 @@ export const listPartners: PartnersCardProps[] = [
         desc: 'Provide industry leading LLM model that will be enhanced and fine-tuned with paddy related information. This trained model will then be embedded in mobile apps Rice Rescue'
     }
 ]
+
+export const listHardwareWithSpecs = [
+    {
+        title: "Autonomous Drone",
+        desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+        specs: ["2 hours of Flight Time", "Max 3kg Pesticide Limit", "5 hours charge time", "4 Propeller"],
+        image: "/hardware/DronePic.png"
+    },
+    {
+        title: "PaddyX Pest Detector",
+        desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+        specs: ["Tensorflow Audio Classifier", "Data transmission through mobile data or radio", "Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
+        image: "/hardware/pestDetector.png"
+    },
+    {
+        title: "PaddyX Soil Sensor",
+        desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+        specs: ["Soil Moisture", "Soil Temperature", "Real-time data", "GPS", "50 Days Battery Life"],
+        image: "/hardware/SoilHumidity&TempSensor.png"
+    }
+];
+
+export const listRevenue : RevenueCardProps[] = [
+    {
+        title: "SaaS Subscription",
+        desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+    },
+    {
+        title: "Sales of Device",
+        desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+    },
+    {
+        title: "Commission",
+        desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+    }
+];

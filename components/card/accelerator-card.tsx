@@ -8,7 +8,7 @@ export interface AcceleratorCardProps {
 
 export function AcceleratorCard({title, desc, image}: AcceleratorCardProps) {
     return(
-        <div className='flex flex-col w-full items-center hover:scale-105 transition-all duration-500 ease-in-out'>
+        <div className='p-5 flex flex-col w-full items-center hover:scale-105 transition-all duration-500 ease-in-out'>
             <div className='relative w-full h-0 pb-[20.25%]'>
                 <Image 
                     src={image} 

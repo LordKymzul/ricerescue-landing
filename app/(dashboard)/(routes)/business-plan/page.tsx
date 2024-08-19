@@ -1,10 +1,11 @@
 import BuildTitleSection from '@/components/BuildTitleSection';
 import React from 'react'
-import { listFunding, listAccelerator, listPartners } from '@/lib/constant';
+import { listFunding, listAccelerator, listPartners, listRevenue } from '@/lib/constant';
 import { FundingCard } from '@/components/card/funding-card';
 import Image from 'next/image';
 import { AcceleratorCard } from '@/components/card/accelerator-card';
 import { PartnerCard } from '@/components/card/partners-card';
+import { RevenueCard } from '@/components/card/revenue-card';
 
 
 type Props = {}
@@ -53,43 +54,46 @@ function BusinessHero() {
 }
 
 function Funding() {
-    return(
-        <section className='flex flex-col w-full pt-12 mb-10 mt-10 md:pt-10'>
+    return (
+        <section className='flex flex-col w-full pt-12 mb-10 mt-10 md:pt-10 container'>
             <BuildTitleSection
-                title='Funding' 
-                desc='Cultivating growth by partnering with specialized AgTech funders' 
+                title='Funding'
+                desc='Cultivating growth by partnering with specialized AgTech funders'
                 badges={['']} />
 
-            <div className='grid grid-cols-2 md:grid-cols-2 w-full items-start mt-12 gap-6 container'>
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-full items-start mt-12 gap-6">
                 {listFunding.slice(0, 2).map((funding, index) => (
-                    <FundingCard 
+                    <FundingCard
                         key={index}
-                        image={funding.image} 
+                        image={funding.image}
                         title={funding.title}
-                        desc={funding.desc} />
+                        desc={funding.desc}
+                    />
                 ))}
-                <div className="col-span-2 flex justify-center mt-2">
-                    <div className="w-1/2">
-                        <FundingCard 
+                <div className="lg:col-span-2 flex justify-center mt-2">
+                    <div className="w-full lg:w-1/2">
+                        <FundingCard
                             image={listFunding[2].image}
                             title={listFunding[2].title}
-                            desc={listFunding[2].desc} />
+                            desc={listFunding[2].desc}
+                        />
                     </div>
                 </div>
             </div>
+
         </section>
     )
 }
 
 function AcceleratorProgramme() {
-    return(
+    return (
         <section className='pb-20 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50'>
-             <BuildTitleSection
-                title='Accelerator Programme' 
-                desc='Boosting our growth to empower more farmers' 
+            <BuildTitleSection
+                title='Accelerator Programme'
+                desc='Boosting our growth to empower more farmers'
                 badges={['']} />
 
-            <div className="grid grid-cols-2 md:grid-cols-2 w-full gap-6 mt-6 items-start container">
+            <div className="grid  grid-cols-1 md:grid-cols-2 w-full gap-6 mt-6 items-start">
                 {
                     listAccelerator.map((accelerator, index) => {
                         return (
@@ -143,12 +147,25 @@ function StrategicPartners() {
                 className="z-0"
             />
             <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="text-6xl font-bold tracking-tighter sm:text-6xl">
-                Revenue Stream
-                </h1>
-                <h2 className="mt-2 mx-auto max-w-[700px] text-base md:text-lg lg:text-xl">
-                Here is our business strategy to sustain our business in order to keep giving impact to rice agricultural industry
-                </h2>
+                <div>
+                    <h1 className="text-6xl font-bold tracking-tighter sm:text-6xl">
+                    Revenue Stream
+                    </h1>
+                    <h2 className="mt-2 mx-auto max-w-[700px] text-base md:text-lg lg:text-xl">
+                    Here is our business strategy to sustain our business in order to keep giving impact to rice agricultural industry
+                    </h2>
+                </div>
+
+                <div className="mt-10 mb-10 pt-12 grid grid-cols-4 md:grid-cols-4 w-full gap-6 mt-6 items-start sm:grid-cols-2">
+                    {listRevenue.map((rev, index) => (
+                        <RevenueCard
+                        key={index}
+                        title={rev.title}
+                        desc={rev.desc}
+                        />
+                    ))}
+                </div> 
+
             </div>
     </section>
     )
