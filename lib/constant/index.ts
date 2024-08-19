@@ -44,7 +44,7 @@ export const listBusinessCard: BusinessCardProps[] = [
 
         ],
         items: [
-            "ECF", "P2P", "Goverment", "Bank Loan"
+            "ECF", "P2P", "Accelerator Programme", "Bank Loan"
         ]
     },
     {
@@ -57,7 +57,7 @@ export const listBusinessCard: BusinessCardProps[] = [
 
         ],
         items: [
-            "Companies", "Goverments"
+            "Tech Companies"
         ]
     },
     {
@@ -77,7 +77,7 @@ export const listTeams: MemberCardProps[] = [
     {
         name: "Haziq Hakimi",
         position: "Project Manager",
-        image: "https://firebasestorage.googleapis.com/v0/b/bee-rescue-9c61f.appspot.com/o/test%2F5A9E6057-5E3A-4739-BAD4-D3E2F6C8390D_1_105_c.jpeg?alt=media&token=c75c63fb-f754-4ff8-a518-b46ed4fec0e5",
+        image: "/member/haziq.png",
         url: "https://www.linkedin.com/in/haziqhakimimazlisham/",
         about: "The road to success is paved with resilience and innovation. Stay committed to your goals, and let your passion guide you through every challenge."
     },
@@ -211,7 +211,7 @@ export const listHardwareBusiness : HardwareBusinessCardProps[] = [
         title: "Autonomous Drone",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
         image: "/hardware/DronePic.png",
-        price: '$345 USD / unit'
+        price: '$1300 USD / unit'
     },
     {
         title: "PaddyX Pest Detector",

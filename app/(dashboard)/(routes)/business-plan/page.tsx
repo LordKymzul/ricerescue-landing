@@ -154,7 +154,7 @@ function StrategicPartners() {
                     Revenue Stream
                     </h1>
                     <h2 className="mt-2 mx-auto max-w-[700px] text-base md:text-lg lg:text-xl">
-                    Here is our business strategy to sustain our business in order to keep giving impact to rice agricultural industry
+                    Here is our pricing strategy to sustain our business in order to keep giving impact to rice agricultural industry
                     </h2>
                 </div>
 
