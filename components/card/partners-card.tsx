@@ -13,7 +13,7 @@ export function PartnerCard({title, image, desc}: PartnersCardProps) {
 
     return(
         <div
-            className={`p-3 relative flex flex-col items-center w-full cursor-pointer transition-transform duration-500 ease-in-out transform rounded-xl hover:scale-105
+            className={`p-5 relative flex flex-col items-center w-full cursor-pointer transition-transform duration-500 ease-in-out transform rounded-xl hover:scale-105
                 ${hovered ? 'border hover:border-2 hover:border-green-300' : ''}`}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
