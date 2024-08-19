@@ -1,10 +1,10 @@
 import { AcceleratorCardProps } from "@/components/card/accelerator-card";
 import { BusinessCardProps } from "@/components/card/business-card";
 import { FundingCardProps } from "@/components/card/funding-card";
+import { HardwareBusinessCardProps } from "@/components/card/hardware-business.card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
 import { PartnersCardProps } from "@/components/card/partners-card";
-import { RevenueCardProps } from "@/components/card/revenue-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
 
 import exp from "constants";
@@ -112,19 +112,22 @@ export const listHardware: HardwareCardProps[] = [
         title: "Autonomous Drone",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
         specs: ["2 hours of Flight Time", "Max 3kg Pesticide Limit", "5 hours charge time", "4 Propeller"],
-        image: "/hardware/DronePic.png"
+        image: "/hardware/DronePic.png",
+        price: ""
     },
     {
         title: "PaddyX Pest Detector",
         desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
         specs: ["Tensorflow Audio Classifier", "Data transmission through mobile data or radio", "Water resistant", "GPS", "Sensitive Microphone", "Real-time"],
-        image: "/hardware/pestDetector.png"
+        image: "/hardware/pestDetector.png",
+        price: ""
     },
     {
         title: "PaddyX Soil Sensor",
         desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
         specs: ["Soil Moisture", "Soil Temperature", "Real-time data", "GPS", "50 Days Battery Life"],
-        image: "/hardware/SoilHumidity&TempSensor.png"
+        image: "/hardware/SoilHumidity&TempSensor.png",
+        price: ""
     }
 ];
 
@@ -203,20 +206,23 @@ export const listHardwareWithSpecs = [
     }
 ];
 
-export const listRevenue : RevenueCardProps[] = [
+export const listHardwareBusiness : HardwareBusinessCardProps[] = [
     {
-        title: "SaaS Subscription",
+        title: "Autonomous Drone",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
-        image: '/business-model/subscription.png'
+        image: "/hardware/DronePic.png",
+        price: '$345 USD'
     },
     {
-        title: "Sales of Device",
+        title: "PaddyX Pest Detector",
         desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
-        image: '/business-model/IoT.png'
+        image: "/hardware/pestDetector.png",
+        price: '$11.26 USD'
     },
     {
-        title: "Commission",
+        title: "PaddyX Soil Sensor",
         desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
-        image: '/business-model/IoT.png'
+        image: "/hardware/SoilHumidity&TempSensor.png",
+        price: '$76.73 USD'
     }
 ];

@@ -2,6 +2,7 @@ import Image from "next/image"
 
 
 export interface HardwareCardProps {
+    price: string;
     title: string;
     desc: string;
     image: string;

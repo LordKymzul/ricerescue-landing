@@ -1,12 +1,12 @@
 import BuildTitleSection from '@/components/BuildTitleSection';
 import React from 'react'
-import { listFunding, listAccelerator, listPartners, listRevenue } from '@/lib/constant';
+import { listFunding, listAccelerator, listPartners, listHardware, listHardwareBusiness,} from '@/lib/constant';
 import { FundingCard } from '@/components/card/funding-card';
 import Image from 'next/image';
 import { AcceleratorCard } from '@/components/card/accelerator-card';
 import { PartnerCard } from '@/components/card/partners-card';
-import { RevenueCard } from '@/components/card/revenue-card';
 import { PricingSubscription } from '@/components/component/pricing-subscription';
+import { HardwareBusinessCardProps, HardwareCard } from '@/components/card/hardware-business.card';
 
 type Props = {}
 
@@ -19,6 +19,7 @@ const BusinessPlan = (props: Props) => {
             <AcceleratorProgramme />
             <StrategicPartners />
             <RevenueStream />
+            <PricingDevice />
         </div>     
         
         </>
@@ -157,19 +158,50 @@ function StrategicPartners() {
                 </div>
 
                 <PricingSubscription/>
-{/* 
-                <div className="mt-10 mb-10 pt-12 grid grid-cols-4 md:grid-cols-4 w-full gap-6 mt-6 items-start sm:grid-cols-2">
-                    {listRevenue.map((rev, index) => (
-                        <RevenueCard
-                        key={index}
-                        title={rev.title}
-                        desc={rev.desc}
-                        image={rev.image}
-                        />
-                    ))}
-                </div>  */}
 
             </div>
     </section>
+    )
+}
+
+function PricingDevice() {
+    return(
+        <section>
+               <div className="relative h-screen w-full">
+                    {/* Background Video */}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        className="absolute top-0 left-0 w-full h-full object-cover"
+                    >
+                        <source src="/business-model/hardware.webm" type="video/webm" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    {/* White Overlay */}
+                    <div className="absolute top-0 left-0 w-full h-full bg-white opacity-70"></div>
+
+                    {/* Content on Top of the Video */}
+                    <div className="relative z-10 flex items-center justify-center h-full">
+                        <div className="grid grid-cols-1 md:grid-cols-3 w-full gap-6 mt-6 items-start">
+                            {
+                                listHardwareBusiness.map((hardware, index) => {
+                                    return (
+                                        <HardwareCard
+                                            key={index}
+                                            title={hardware.title}
+                                            desc={hardware.desc}
+                                            image={hardware.image}
+                                            price={hardware.price}
+                                        />
+                                    )
+                                })
+                            }
+
+                        </div>
+                    </div>
+                </div>
+        </section>
     )
 }
