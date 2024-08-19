@@ -23,7 +23,7 @@ export function AcceleratorCard({title, desc, image}: AcceleratorCardProps) {
                 <p className='font-bold text-xl md:text-2xl'>
                     {title}
                 </p>
-                <p className='font-light text-sm md:text-base'>
+                <p className='font-light text-sm max-w-[600px] md:text-base'>
                     {desc}
                 </p>
             </div>

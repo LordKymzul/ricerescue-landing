@@ -82,7 +82,7 @@ function Funding() {
 
 function AcceleratorProgramme() {
     return(
-        <section className='pb-12 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50'>
+        <section className='pb-20 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50'>
              <BuildTitleSection
                 title='Accelerator Programme' 
                 desc='Boosting our growth to empower more farmers' 
@@ -107,7 +107,7 @@ function AcceleratorProgramme() {
 
 function StrategicPartners() {
     return (
-      <section className="mt-10 flex flex-col w-full pt-12 md:pt-15">
+      <section className="pb-20 mt-10 flex flex-col w-full pt-12 md:pt-15">
         <BuildTitleSection
           title="Strategic Partners"
           desc="Establish strategic partnership with leading tech company for R&D"
