@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { AcceleratorCard } from '@/components/card/accelerator-card';
 import { PartnerCard } from '@/components/card/partners-card';
 import { RevenueCard } from '@/components/card/revenue-card';
-
+import { PricingSubscription } from '@/components/component/pricing-subscription';
 
 type Props = {}
 
@@ -135,7 +135,7 @@ function StrategicPartners() {
   
   function RevenueStream() {
     return(
-        <section className="relative h-[500px]">
+        <section className="relative h-[800px]">
             <div className="absolute inset-0 bg-gradient-to-r from-lime-700/70 to-green-400/70 z-10"></div>
 
             <Image
@@ -156,15 +156,18 @@ function StrategicPartners() {
                     </h2>
                 </div>
 
+                <PricingSubscription/>
+{/* 
                 <div className="mt-10 mb-10 pt-12 grid grid-cols-4 md:grid-cols-4 w-full gap-6 mt-6 items-start sm:grid-cols-2">
                     {listRevenue.map((rev, index) => (
                         <RevenueCard
                         key={index}
                         title={rev.title}
                         desc={rev.desc}
+                        image={rev.image}
                         />
                     ))}
-                </div> 
+                </div>  */}
 
             </div>
     </section>

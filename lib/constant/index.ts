@@ -207,13 +207,16 @@ export const listRevenue : RevenueCardProps[] = [
     {
         title: "SaaS Subscription",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
+        image: '/business-model/subscription.png'
     },
     {
         title: "Sales of Device",
         desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
+        image: '/business-model/IoT.png'
     },
     {
         title: "Commission",
         desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
+        image: '/business-model/IoT.png'
     }
 ];
