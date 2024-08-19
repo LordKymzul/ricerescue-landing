@@ -45,7 +45,7 @@ export function PricingSubscription() {
             </li>
             <li className="flex items-center">
               <CheckIcon className="w-3 h-3 text-green-500" />
-              <span className="ml-1 text-sm">Consultation, services and farmer&aposs marketplace</span>
+              <span className="ml-1 text-sm">Consultation, services and farmer&apos;s marketplace</span>
             </li>
           </ul>
         </CardContent>
