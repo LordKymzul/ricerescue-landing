@@ -1,4 +1,5 @@
 import { BusinessCardProps } from "@/components/card/business-card";
+import { FundingCardProps } from "@/components/card/funding-card";
 import { HardwareCardProps } from "@/components/card/hardware-card";
 import { MemberCardProps } from "@/components/card/member-card";
 import { SolutionCardProps } from "@/components/card/solution-card";
@@ -120,3 +121,22 @@ export const listHardware: HardwareCardProps[] = [
         image: "/hardware/SoilHumidity&TempSensor.png"
     }
 ];
+
+export const listFunding: FundingCardProps[] = [
+    {
+        title: "Industry Drone",
+        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        image: "/hardware/DronePic.png"
+    },
+    {
+        title: "Rasberry PI",
+        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        image: "/hardware/pestDetector.png"
+    },
+    {
+        title: "IOT Device",
+        desc: "We tailor our mobile apps to meet your specific business needs, ensuring they align with your brand and goals.",
+        image: "/hardware/SoilHumidity&TempSensor.png"
+    }
+];
+
