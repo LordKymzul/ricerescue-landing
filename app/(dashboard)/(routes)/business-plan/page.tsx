@@ -1,12 +1,12 @@
-import BuildTitleSection from '@/components/BuildTitleSection';
-import React from 'react'
-import { listFunding, listAccelerator, listPartners, listHardware, listHardwareBusiness,} from '@/lib/constant';
-import { FundingCard } from '@/components/card/funding-card';
-import Image from 'next/image';
-import { AcceleratorCard } from '@/components/card/accelerator-card';
-import { PartnerCard } from '@/components/card/partners-card';
-import { PricingSubscription } from '@/components/component/pricing-subscription';
-import { HardwareBusinessCardProps, HardwareCard } from '@/components/card/hardware-business.card';
+import BuildTitleSection from "@/components/BuildTitleSection";
+import React from "react"
+import { listFunding, listAccelerator, listPartners, listHardware, listHardwareBusiness,} from "@/lib/constant";
+import { FundingCard } from "@/components/card/funding-card";
+import Image from "next/image";
+import { AcceleratorCard } from "@/components/card/accelerator-card";
+import { PartnerCard } from "@/components/card/partners-card";
+import { PricingSubscription } from "@/components/component/pricing-subscription";
+import { HardwareBusinessCardProps, HardwareCard } from "@/components/card/hardware-business.card";
 
 type Props = {}
 
@@ -14,7 +14,7 @@ const BusinessPlan = (props: Props) => {
     return (
         <>
         <BusinessHero />
-        <div className='grid grid-cols-1 items-start p-2 w-full pb-0'>
+        <div className="grid grid-cols-1 items-start p-2 w-full pb-0">
             <Funding />
             <AcceleratorProgramme />
             <StrategicPartners />
@@ -57,11 +57,11 @@ function BusinessHero() {
 
 function Funding() {
     return (
-        <section className='flex flex-col w-full pt-12 mb-10 mt-10 md:pt-10 container'>
+        <section className="flex flex-col w-full pt-12 mb-10 mt-10 md:pt-10 container">
             <BuildTitleSection
-                title='Funding'
-                desc='Cultivating growth by partnering with specialized AgTech funders'
-                badges={['']} />
+                title="Funding"
+                desc="Cultivating growth by partnering with specialized AgTech funders"
+                badges={[""]} />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full items-start mt-12 gap-6">
                 {listFunding.slice(0, 2).map((funding, index) => (
@@ -89,11 +89,11 @@ function Funding() {
 
 function AcceleratorProgramme() {
     return (
-        <section className='pb-20 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50'>
+        <section className="pb-20 mt-10 flex flex-col w-full pt-12 md:pt-15 bg-gray-100/50">
             <BuildTitleSection
-                title='Accelerator Programme'
-                desc='Boosting our growth to empower more farmers'
-                badges={['']} />
+                title="Accelerator Programme"
+                desc="Boosting our growth to empower more farmers"
+                badges={[""]} />
 
             <div className="grid  grid-cols-1 md:grid-cols-2 w-full gap-6 mt-6 items-start">
                 {
@@ -118,7 +118,7 @@ function StrategicPartners() {
         <BuildTitleSection
           title="Strategic Partners"
           desc="Establish strategic partnership with leading tech company for R&D"
-          badges={['']}
+          badges={[""]}
         />
   
         <div className="mt-10 mb-10 pt-12 grid grid-cols-4 md:grid-cols-4 w-full gap-6 mt-6 items-start sm:grid-cols-2">
@@ -211,31 +211,31 @@ function OtherComponents() {
     return(
         <section>
             <Image
-                    src={'/business-model/25.png'}
+                    src={"/business-model/25.png"}
                     width={1200}
                     height={400}
                     alt="hero"
                     className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
              <Image
-                    src={'/business-model/26.png'}
+                    src={"/business-model/26.png"}
                     width={1200}
                     height={400}
                     alt="hero"
                     className="mt-12 mb-10 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
              <Image
-                    src={'/business-model/27.png'}
+                    src={"/business-model/27.png"}
                     width={1200}
                     height={400}
                     alt="hero"
                     className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
              <Image
-                    src={'/business-model/28.png'}
+                    src={"/business-model/28.png"}
                     width={1200}
                     height={400}
                     alt="hero"
                     className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
              <Image
-                    src={'/business-model/29.png'}
+                    src={"/business-model/29.png"}
                     width={1200}
                     height={400}
                     alt="hero"

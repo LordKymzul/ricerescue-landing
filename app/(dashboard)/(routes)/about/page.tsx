@@ -53,7 +53,7 @@ function BuildProfileInformation() {
                     </div>
                 </div>
                 <Image
-                    src={'/ricerescueabout.png'}
+                    src={"/ricerescueabout.png"}
                     width={1200}
                     height={400}
                     alt="hero"
@@ -168,7 +168,7 @@ function BuildSoftwareArchitecture() {
                 style={{
                     objectFit: "cover"
                 }}
-                src={'/software-architecture.png'}
+                src={"/software-architecture.png"}
                 className="mt-6" />
         </section>
     )

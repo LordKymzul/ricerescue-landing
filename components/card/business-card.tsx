@@ -61,7 +61,7 @@ export function BusinessCard({
                         })
                     }
                 </div>
-                <Link href={'/business-plan'} >
+                <Link href={"/business-plan"} >
                     <Badge
                         variant={"default"}
                         className="mt-6 rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
