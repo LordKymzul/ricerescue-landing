@@ -191,7 +191,7 @@ function BuildHardware() {
                                 title={hardware.title}
                                 desc={hardware.desc}
                                 image={hardware.image}
-                                specs={hardware.specs} />
+                                specs={hardware.specs} price={""} />
                         )
                     })
                 }

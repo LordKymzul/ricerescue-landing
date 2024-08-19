@@ -211,18 +211,18 @@ export const listHardwareBusiness : HardwareBusinessCardProps[] = [
         title: "Autonomous Drone",
         desc: "Auto flying drone for user for spraying pesticide. Farmers will set the flight path through the apps and drone will follow the exact path. This will increase the farm efficiency by minimizng physical labor",
         image: "/hardware/DronePic.png",
-        price: '$345 USD'
+        price: '$345 USD / unit'
     },
     {
         title: "PaddyX Pest Detector",
         desc: "Using AI embedded in IoT device to detect the sound of pests that will harm production. It will send alert to farmer through mobile and will notify the species of the pest and the GPS Coordinate it detects it.",
         image: "/hardware/pestDetector.png",
-        price: '$11.26 USD'
+        price: '$76.73 USD / unit'
     },
     {
         title: "PaddyX Soil Sensor",
         desc: "Give realtime-data of the current soil condition. Enable farmer to strategically manage soil quality in order to gain maximum crop production",
         image: "/hardware/SoilHumidity&TempSensor.png",
-        price: '$76.73 USD'
+        price: '$11.26 USD / unit'
     }
 ];

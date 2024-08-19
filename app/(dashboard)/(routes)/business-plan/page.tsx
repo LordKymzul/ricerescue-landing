@@ -20,6 +20,7 @@ const BusinessPlan = (props: Props) => {
             <StrategicPartners />
             <RevenueStream />
             <PricingDevice />
+            <OtherComponents />
         </div>     
         
         </>
@@ -202,6 +203,43 @@ function PricingDevice() {
                         </div>
                     </div>
                 </div>
+        </section>
+    )
+}
+
+function OtherComponents() {
+    return(
+        <section>
+            <Image
+                    src={'/business-model/25.png'}
+                    width={1200}
+                    height={400}
+                    alt="hero"
+                    className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
+             <Image
+                    src={'/business-model/26.png'}
+                    width={1200}
+                    height={400}
+                    alt="hero"
+                    className="mt-12 mb-10 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
+             <Image
+                    src={'/business-model/27.png'}
+                    width={1200}
+                    height={400}
+                    alt="hero"
+                    className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
+             <Image
+                    src={'/business-model/28.png'}
+                    width={1200}
+                    height={400}
+                    alt="hero"
+                    className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
+             <Image
+                    src={'/business-model/29.png'}
+                    width={1200}
+                    height={400}
+                    alt="hero"
+                    className="mt-12 mx-auto aspect-[2/1] overflow-hidden  rounded-xl object-cover object-center" />
         </section>
     )
 }
