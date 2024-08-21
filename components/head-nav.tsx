@@ -46,7 +46,7 @@ export function HeadNavbar() {
     const pathname = usePathname();
     //max-w-7xl mx-auto
     return (
-        <nav className="mx-4 md:mx-20 px-4  py-5">
+        <nav className="mx-4 md:mx-20 px-4 py-5 bg-white border-b shadow-sm rounded-sm">
             <div className="flex items-center justify-between">
                 <Link href={"/"}>
                     <h1 className="text-3xl font-semibold">
